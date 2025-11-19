@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rishi Patties | Smart QR Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-circle">R</div>
+        <div>
+          <h1 class="brand-name">Rishi Patties</h1>
+          <p class="brand-tagline">Scan • Select • Order • Enjoy</p>
+        </div>
+      </div>
+      <div class="badge">Fulx QR</div>
+    </header>
+
+    <!-- OUTLET SELECTOR -->
+    <section class="card">
+      <h2 class="section-title">Select Outlet</h2>
+      <div id="outletTabs" class="outlet-tabs"></div>
+      <div id="outletInfo" class="outlet-info"></div>
+    </section>
+
+    <!-- PAYMENT INFO -->
+    <section class="card info-card">
+      <p class="info-text">
+        ✅ Choose your items, set quantity, select <strong>COD</strong> or <strong>UPI</strong>, then tap
+        <strong>Send Order on WhatsApp</strong>.  
+        Bill customer ke WhatsApp par bhi rahega, outlet ke WhatsApp par bhi.
+      </p>
+    </section>
+
+    <!-- MAIN LAYOUT -->
+    <main class="layout">
+      <!-- MENU SIDE -->
+      <section class="card menu-card">
+        <div class="menu-header">
+          <div>
+            <h2 class="section-title">Menu</h2>
+            <p class="muted">Tap on + to add items to your cart.</p>
+          </div>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search item (e.g. Cheese, Aloo, Tandoori)..."
+          />
+        </div>
+
+        <div id="categoryPills" class="category-pills"></div>
+        <div id="menuList" class="menu-list"></div>
+      </section>
+
+      <!-- CART SIDE -->
+      <aside class="card cart-card">
+        <h2 class="section-title">Your Order</h2>
+        <div id="cartEmpty" class="cart-empty">
+          Cart is empty. Add some tasty patties 😋
+        </div>
+        <div id="cartList" class="cart-list"></div>
+
+        <div class="divider"></div>
+
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Items</span>
+            <span id="summaryItems">0</span>
+          </div>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="summarySubtotal">₹0</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-group">
+          <label for="customerName">Your Name (optional)</label>
+          <input type="text" id="customerName" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label>Payment Mode</label>
+          <div class="payment-options">
+            <label class="radio">
+              <input type="radio" name="paymentMode" value="COD" checked />
+              <span>Cash on Delivery / Counter</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="paymentMode" value="UPI" />
+              <span>UPI (Scan / Link at counter)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="customerNote">Note (optional)</label>
+          <textarea id="customerNote" rows="2" placeholder="Extra cheese, less spicy, etc."></textarea>
+        </div>
+
+        <button id="btnWhatsApp" class="primary-btn">
+          💬 Send Order on WhatsApp
+        </button>
+
+        <p class="mini-note">
+          By tapping the button, your order summary will open in WhatsApp. Please press <strong>Send</strong> to confirm.
+        </p>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Made with ❤️ for Rishi Patties • Powered by Fulx QR</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
