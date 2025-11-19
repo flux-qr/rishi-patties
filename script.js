@@ -8,7 +8,7 @@ const OUTLETS = [
     name: "Parkota Outlet",
     area: "Parkota",
     address: "Rishi Patties, Parkota, Sagar (M.P.)",
-    whatsapp: "91XXXXXXXXXX", // TODO: real number
+    whatsapp: "+91 90093 00004", // TODO: real number
     mapsUrl: "https://www.google.com/maps?q=Rishi+Patties+Parkota"
   },
   {
