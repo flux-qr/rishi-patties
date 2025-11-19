@@ -8,7 +8,7 @@ const OUTLETS = [
     name: "Parkota Outlet",
     area: "Parkota",
     address: "Rishi Patties, Parkota, Sagar (M.P.)",
-    whatsapp: "+91 90093 00004", // TODO: real number
+    whatsapp: "919009300004", // TODO: real number
     mapsUrl: "https://www.google.com/maps?q=Rishi+Patties+Parkota"
   },
   {
@@ -16,7 +16,7 @@ const OUTLETS = [
     name: "Tili Outlet",
     area: "Tili",
     address: "Rishi Patties, Tili, Sagar (M.P.)",
-    whatsapp: "91XXXXXXXXXX", // TODO: real number
+    whatsapp: "919009300004", // TODO: real number
     mapsUrl: "https://www.google.com/maps?q=Rishi+Patties+Tili"
   },
   {
@@ -24,7 +24,7 @@ const OUTLETS = [
     name: "Civil Line Outlet",
     area: "Civil Line",
     address: "Rishi Patties, Civil Line, Sagar (M.P.)",
-    whatsapp: "91XXXXXXXXXX", // TODO: real number
+    whatsapp: "919009300004", // TODO: real number
     mapsUrl: "https://www.google.com/maps?q=Rishi+Patties+Civil+Line"
   },
   {
@@ -32,7 +32,7 @@ const OUTLETS = [
     name: "Makronia Outlet",
     area: "Makronia",
     address: "Rishi Patties, Makronia, Sagar (M.P.)",
-    whatsapp: "91XXXXXXXXXX", // TODO: real number
+    whatsapp: "919009300004", // TODO: real number
     mapsUrl: "https://www.google.com/maps?q=Rishi+Patties+Makronia"
   }
 ];
@@ -120,9 +120,15 @@ function renderOutletInfo() {
       <a class="outlet-btn" href="${outlet.mapsUrl}" target="_blank" rel="noopener noreferrer">
         🗺️ Live Location
       </a>
-      <a class="outlet-btn primary" href="https://wa.me/${outlet.whatsapp}" target="_blank" rel="noopener noreferrer">
-        💬 Chat Outlet
-      </a>
+      <a class="outlet-btn primary" 
+   href="https://wa.me/${outlet.whatsapp}?text=${encodeURIComponent(
+     `Hello Rishi Patties! I want to order.%0AHere is your outlet live location:%0A${outlet.mapsUrl}`
+   )}" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  💬 WhatsApp + 📍 Location
+</a>
+
     </div>
   `;
 }
