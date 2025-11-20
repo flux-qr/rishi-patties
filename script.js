@@ -138,7 +138,6 @@ const MENU = [
 { id:"burger-014", name: "Jalapeno Cheese Burger", price: 90, category: "Burger" },
 { id:"burger-015", name: "Crunchy Burger", price: 100, category: "Burger" },
 { id:"burger-016", name: "Kulhad Pizza Burger (Special)", price: 160, category: "Burger" },// optional if needed
-
 // SANDWICH
 { id:"sandwich-001", name: "Chocolate Sandwich", price: 90, category: "Sandwich" },
 { id:"sandwich-002", name: "Veg Cheese Masala Sandwich", price: 80, category: "Sandwich" },
@@ -308,8 +307,7 @@ const MENU = [
 { id:"garlic-004", name: "Tandoori Garlic Bread", price: 90, category: "Garlic Bread" },
 { id:"garlic-005", name: "Chinese Garlic Bread", price: 90, category: "Garlic Bread" },
 { id:"garlic-006", name: "Sweetcorn Garlic Bread", price: 120, category: "Garlic Bread" },
-
- { id: "mineral-water", name: "Mineral Water", price: 20, category: "Beverages", subtitle: "Packaged drinking water." }
+{ id: "mineral-water", name: "Mineral Water", price: 20, category: "Beverages", subtitle: "Packaged drinking water." }
 ];
 
 // ----- STATE ----- //
