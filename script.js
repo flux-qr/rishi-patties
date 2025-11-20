@@ -574,6 +574,27 @@ function renderCart() {
   summaryItems.textContent = totalQty;
   summarySubtotal.textContent = formatCurrency(subtotal);
 }
+// ----- CUSTOMER LIVE LOCATION (AUTO FILL) ----- //
+
+function captureCustomerLocation() {
+  if (!navigator.geolocation) {
+    console.log("Geolocation not supported.");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const lat = pos.coords.latitude;
+      const lng = pos.coords.longitude;
+      const url = `https://www.google.com/maps?q=${lat},${lng}`;
+      document.getElementById("customerLocation").value = url;
+      console.log("Location captured:", url);
+    },
+    (err) => {
+      console.log("Location error:", err);
+    }
+  );
+}
 
 // ----- WHATSAPP ORDER ----- //
 
@@ -622,7 +643,11 @@ function handleWhatsAppOrder() {
   if (note) {
     text += `%0ANote: ${encodeURIComponent(note)}%0A`;
   }
-  text += `%0AOutlet Location:%0A${encodeURIComponent(outlet.mapsUrl)}%0A`;
+  const liveLoc = document.getElementById("customerLocation").value;
+if (liveLoc) {
+  text += `%0A*Customer Live Location:*%0A${encodeURIComponent(liveLoc)}%0A`;
+}
+
   text += `%0A(Generated via Fulx QR System)`;
 
   const url = `https://wa.me/${outlet.whatsapp}?text=${text}`;
@@ -637,6 +662,8 @@ function init() {
   renderCategoryPills();
   renderMenuList();
   renderCart();
+  captureCustomerLocation(); // <-- NEW LINE
+
 
   const searchInput = document.getElementById("searchInput");
   searchInput.addEventListener("input", (e) => {
