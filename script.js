@@ -40,8 +40,7 @@ const OUTLETS = [
 // 🔥 MENU ITEMS (sample) → yahan tum PDF se prices/items ke hisaab se edit kar sakte ho
 // Same menu har outlet ke liye use ho sakta hai.
 const MENU = [
- // PATTIES
-// PATTIES
+  // PATTIES
 { id:"patties-001", name: "Aloo Masala Patties", price: 25, category: "Patties" },
 { id:"patties-002", name: "Cheese Masala Patties", price: 45, category: "Patties" },
 { id:"patties-003", name: "Aloo Paneer Patties", price: 30, category: "Patties" },
@@ -123,7 +122,6 @@ const MENU = [
 { id:"patties-079", name: "Lychee Patties", price: 45, category: "Patties" },
 
 // BURGER
-// BURGER
 { id:"burger-001", name: "Classic Burger", price: 50, category: "Burger" },
 { id:"burger-002", name: "Veggie Aloo Tikki Burger", price: 50, category: "Burger" },
 { id:"burger-003", name: "Veggie Paneer Tikki Burger", price: 60, category: "Burger" },
@@ -139,9 +137,8 @@ const MENU = [
 { id:"burger-013", name: "Maha Veggie Burger", price: 60, category: "Burger" },
 { id:"burger-014", name: "Jalapeno Cheese Burger", price: 90, category: "Burger" },
 { id:"burger-015", name: "Crunchy Burger", price: 100, category: "Burger" },
-{ id:"burger-016", name: "Kulhad Pizza Burger (Special)", price: 160, category: "Burger" } // optional if needed
+{ id:"burger-016", name: "Kulhad Pizza Burger (Special)", price: 160, category: "Burger" },// optional if needed
 
-// SANDWICH
 // SANDWICH
 { id:"sandwich-001", name: "Chocolate Sandwich", price: 90, category: "Sandwich" },
 { id:"sandwich-002", name: "Veg Cheese Masala Sandwich", price: 80, category: "Sandwich" },
@@ -169,9 +166,7 @@ const MENU = [
 { id:"sandwich-024", name: "Kadhai Paneer Sandwich", price: 100, category: "Sandwich" },
 { id:"sandwich-025", name: "Paneer Makhni Sandwich", price: 100, category: "Sandwich" },
 { id:"sandwich-026", name: "Paneer Tandoori Sandwich", price: 100, category: "Sandwich" },
-{ id:"sandwich-027", name: "Garlic Chilli Cheese Sandwich", price: 80, category: "Sandwich" }
-
-// PIZZA
+{ id:"sandwich-027", name: "Garlic Chilli Cheese Sandwich", price: 80, category: "Sandwich" },
 // PIZZA
 { id:"pizza-001", name: "Veg Paneer Pizza", price: 99, category: "Pizza" },
 { id:"pizza-002", name: "Plain Cheese Pizza", price: 120, category: "Pizza" },
@@ -197,8 +192,6 @@ const MENU = [
 { id:"pizza-022", name: "Mutter Paneer Pizza", price: 200, category: "Pizza" },
 { id:"pizza-023", name: "Special Pizza", price: 200, category: "Pizza" },
 { id:"pizza-024", name: "Kulhad Pizza", price: 160, category: "Pizza" }, 
-
-// MAGGI
 // MAGGI
 { id:"maggi-001", name: "Plain Maggi", price: 50, category: "Maggi" },
 { id:"maggi-002", name: "Masala Maggi", price: 50, category: "Maggi" },
@@ -238,8 +231,6 @@ const MENU = [
 { id:"maggi-036", name: "Paneer Tandoori Cheese Maggi", price: 140, category: "Maggi" },
 { id:"maggi-037", name: "Kadhai Paneer Cheese Maggi", price: 140, category: "Maggi" },
 { id:"maggi-038", name: "Tomato Capsicum Cheese Maggi", price: 140, category: "Maggi" },
-
-// PASTA
 // PASTA
 { id:"pasta-001", name: "White Sauce Pasta", price: 120, category: "Pasta" },
 { id:"pasta-002", name: "Red Sauce Pasta", price: 120, category: "Pasta" },
@@ -259,7 +250,6 @@ const MENU = [
 { id:"pasta-016", name: "Olive Pasta", price: 140, category: "Pasta" },
 
 // FRIES
-// FRIES
 { id:"fries-001", name: "French Fries (Small)", price: 80, category: "Fries" },
 { id:"fries-002", name: "French Fries (Medium)", price: 120, category: "Fries" },
 { id:"fries-003", name: "French Fries (Large)", price: 150, category: "Fries" },
@@ -272,8 +262,6 @@ const MENU = [
 { id:"fries-008", name: "Tandoori Fries", price: 130, category: "Fries" },
 { id:"fries-009", name: "Masala Fries", price: 100, category: "Fries" },
 { id:"fries-010", name: "Schezwan Fries", price: 120, category: "Fries" },
-
-// CHINESE
 // CHINESE
 { id:"chinese-001", name: "Veg Noodles", price: 80, category: "Chinese" },
 { id:"chinese-002", name: "Veg Cheese Noodles", price: 120, category: "Chinese" },
@@ -319,7 +307,7 @@ const MENU = [
 { id:"garlic-003", name: "Peri Peri Garlic Bread", price: 90, category: "Garlic Bread" },
 { id:"garlic-004", name: "Tandoori Garlic Bread", price: 90, category: "Garlic Bread" },
 { id:"garlic-005", name: "Chinese Garlic Bread", price: 90, category: "Garlic Bread" },
-{ id:"garlic-006", name: "Sweetcorn Garlic Bread", price: 120, category: "Garlic Bread" }
+{ id:"garlic-006", name: "Sweetcorn Garlic Bread", price: 120, category: "Garlic Bread" },
 
  { id: "mineral-water", name: "Mineral Water", price: 20, category: "Beverages", subtitle: "Packaged drinking water." }
 ];
